@@ -943,9 +943,9 @@ namespace TATA_Production_Status
                                          select grp.First();
                 dtnew = qryLatestInterview.CopyToDataTable();
                 int count = dtnew.Rows.Count;
-                var ids = (from r in dtnew.AsEnumerable()
-                           where r.Field<DateTime>("CreatedOn") < DeleteDataBeforeThisDateTime
-                          select r.Field<int>("DAQINID")).ToList<int>();
+                //var ids = (from r in dtnew.AsEnumerable()
+                //           where r.Field<DateTime>("CreatedOn") < DeleteDataBeforeThisDateTime
+                //          select r.Field<int>("DAQINID")).ToList<int>();
 
 
             }
